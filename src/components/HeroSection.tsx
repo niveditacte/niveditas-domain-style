@@ -28,29 +28,29 @@ const HeroSection = () => {
         backgroundRepeat: "no-repeat"
       }}
     >
-      <div className="absolute inset-0 gradient-hero opacity-90"></div>
+      <div className="absolute inset-0 bg-white/50"></div>
       
       <div className="container mx-auto px-4 lg:px-6 text-center relative z-10">
         <div className="max-w-4xl mx-auto animate-fade-in">
-          <h1 className="font-display font-bold text-5xl md:text-7xl lg:text-8xl text-primary-foreground mb-6">
+          <h1 className="font-display font-bold text-5xl md:text-7xl lg:text-8xl text-foreground mb-6">
             Hi, I'm{" "}
-            <span className="gradient-primary bg-clip-text text-transparent">
+            <span className="text-primary font-bold">
               Nivedita
             </span>
           </h1>
           
-          <h2 className="font-display font-semibold text-2xl md:text-3xl lg:text-4xl text-primary-foreground/90 mb-4">
+          <h2 className="font-display font-semibold text-2xl md:text-3xl lg:text-4xl text-foreground/90 mb-4">
             Data Science & Food Process Engineering
           </h2>
           
-          <p className="text-xl md:text-2xl text-primary-foreground/80 mb-8 max-w-2xl mx-auto">
+          <p className="text-xl md:text-2xl text-muted-foreground mb-8 max-w-2xl mx-auto">
             M.Tech @ IIT Kharagpur | GATE AIR-32 | ML & Food Engineering Enthusiast
           </p>
           
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-12">
             <Button 
               onClick={scrollToProjects}
-              className="bg-primary-foreground text-primary hover:bg-primary-foreground/90 font-semibold px-8 py-3 text-lg shadow-elegant"
+              className="bg-primary text-primary-foreground hover:bg-primary/90 font-semibold px-8 py-3 text-lg shadow-elegant"
             >
               Explore Projects
               <ExternalLink className="ml-2 h-5 w-5" />
@@ -59,7 +59,7 @@ const HeroSection = () => {
             <Button 
               variant="outline" 
               onClick={scrollToContact}
-              className="border-primary-foreground text-primary-foreground hover:bg-primary-foreground/10 font-semibold px-8 py-3 text-lg"
+              className="border-primary text-primary hover:bg-primary hover:text-primary-foreground font-semibold px-8 py-3 text-lg"
             >
               <Download className="mr-2 h-5 w-5" />
               Download Resume
@@ -67,7 +67,7 @@ const HeroSection = () => {
           </div>
           
           <div className="animate-bounce">
-            <ArrowDown className="h-8 w-8 text-primary-foreground/60 mx-auto" />
+            <ArrowDown className="h-8 w-8 text-muted-foreground mx-auto" />
           </div>
         </div>
       </div>
